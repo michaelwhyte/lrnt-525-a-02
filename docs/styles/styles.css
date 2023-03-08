@@ -62,11 +62,11 @@
     top: 1.5em;
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .banner-text {
         left: 2.125em;
     }
-}
+} */
 
 /* Specialty */
 .featured-image {
