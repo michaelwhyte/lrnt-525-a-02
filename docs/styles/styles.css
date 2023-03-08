@@ -1,29 +1,30 @@
 /* Styles go here */
 
 
-
+/* General container */
 .container-sm {
     max-width: 62.5em;
-}
-
-
-.mw-container .navbar-toggler {
-    color: white;
-    border-color: white;
-    margin-left: auto;
 }
 
 .mw-container {
     padding: 0;
 }
 
+/* Header */
 .mw-container header {
     min-height: 3.875em;
 }
 
 .mw-container header h1 {
     font-size: 2em;
-    margin: 0.25em 0 0 0;
+    margin: 0.35em 0 0 0;
+}
+
+/* Main navigation */
+.mw-container .navbar-toggler {
+    color: white;
+    border-color: white;
+    margin-left: auto;
 }
 
 .mw-container .navbar {
@@ -41,14 +42,39 @@
     right: 0;
 }
 
-.mw-container.banner {
+/* .mw-container.banner {
     text-align: right;
 }
 
 .mw-container.banner .alert {
     border-radius: 0;
+} */
+
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    font-style: italic;
+    left: 3.125em;
+    top: 1.5em;
+}
+
+@media (min-width: 768px){
+    .banner-text {
+        left: 2.125em;
+    }
+}
+
+/* Specialty */
+.featured-image {
+    height: 100%;
 }
 
 .featured-image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
