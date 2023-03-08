@@ -1,14 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toolkit - Home</title>
-</head>
-<body>
-    <h1>Toolkit</h1>
-    <p>Content will go here...</p>
-    <img src="images/kittens-01.jpg" alt="Orange kitten">
-</body>
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="container-sm mw-container">
+        <header class="bg-primary text-white">
+
+            <div class="container-sm d-flex justify-content-between">
+
+            <h1><a class="navbar-brand" href="#">Toolkit</a></h1>
+        
+            <!-- Navigation Links -->
+            <nav class="navbar navbar-expand-md">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Model</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              People
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Administration</a></li>
+                              <li><a class="dropdown-item" href="#">Faculty</a></li>
+                              <li><a class="dropdown-item" href="#">Students</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">References</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Faculty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Students</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </nav>
+          </header>
+          <main>
+            <!-- <div class="container-fluid mw-container banner">
+                <div class="alert alert-primary p-5" role="alert">
+                  <h2 class="h1">A Toolkit for Implementing<br>Digital Communications</h2>
+                </div>
+            </div> -->
+            <section class="container-fluid introduction p-3">
+                <div class="row">
+                    <div class="col-md-4 featured-image pb-3">
+                      <img src="images/kittens-01.jpg" alt="Orange kitten" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Introduction</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus assumenda hic nam cupiditate illo, quo consequatur corporis temporibus aliquam aperiam recusandae dignissimos eveniet expedita quisquam excepturi voluptas neque. Minima cumque blanditiis nam ullam fugit hic, fugiat dolores iusto id. Error aperiam repellat eos, unde molestias vitae architecto rem consequuntur veniam itaque numquam sapiente illum quas sequi aliquam similique iure earum nemo! Quasi, ipsum? Soluta placeat repudiandae alias! Vero numquam itaque recusandae, enim eius quibusdam voluptate!</p>
+                    </div>
+                  </div>
+                
+            </section>
+          </main>
+    </div>
+    <script src="scripts/bootstrap.bundle.js"></script>
+  </body>
 </html>
