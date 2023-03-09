@@ -1,9 +1,16 @@
 /* Reset */
 html {
     box-sizing: border-box;
+    min-height: 100%;
 }
   *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    min-height: 100%;
 }
 
 img {
@@ -37,17 +44,149 @@ h1, h2, h3, h4, h5, h6 {
     --blue-light: #e1efff;
     --orange: #f66b1d;
     --white: #ffffff;
+    --black: #484b4e;
+    --header-height: 4.349375em;
 }
 
 /* Container Styles */
 .container {
     max-width: 85.375em;
     margin: 0 auto;
-    padding: 20em 0 20em 0; 
+    padding: 1.5em; 
+}
+
+/* Header */
+header {
+    height: var(--header-height);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em;
+    /* border: 3px solid red; */
+}
+
+/* Hamburger */
+.hamburger {
+    position: relative;
+    top: 0.25em;
+}
+
+
+/* Nav */
+.bottom-header {
+    background-color: var(--white);
+    top: var(--header-height);
+    height: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.show-menu .bottom-header {
+    transform: translate(17%);
+    transition-duration: 0.3s;
+}
+
+.bottom-header.no-transition {
+    transition-duration: 0s;
 }
 
 
 
+.bottom-header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-header nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    display: block;
+    line-height: 2.3em;
+    padding: 0 1.25em 0 1.25em;
+}
+
+/* Intro section */
+.intro {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.intro .container {
+    padding-top: 1.25em;
+}
+
+.intro .heading-container {
+    margin-bottom: 2.5em;
+}
+
+.intro h2 {
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-left: 0.5em;
+    margin: 0.25em 0 0 0.5em;
+}
+
+.intro .mega-heading {
+    font-size: 7em;
+    margin: 0;
+    line-height: 1;
+}
+
+.image-container {
+    padding: 0 6em;
+}
+
+.apa-title {
+    background-color: var(--blue-light);
+    color: var(--white);
+    text-align: center;
+}
+
+.apa-title p {
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.apa-title .container {
+    padding-top: 0;
+}
+
+.apa-title .box-highlight {
+    background-color: var(--orange);
+    padding: 1em 2em;
+}
+
+/* Overlay */
+.overlay {
+    background-color: var(--black);
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: var(--header-height);
+    left: 0;
+    display: none;
+}
+
+.show-menu .overlay {
+    display: block;
+}
 
 /* Utility class */
 .visually-hidden,
