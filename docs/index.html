@@ -1,77 +1,61 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toolkit</title>
-    <link href="styles/bootstrap.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolkit: Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <div class="container-fluid mw-container">
-        <header class="bg-primary text-white">
-
-            <div class="container-sm d-flex justify-content-between">
-
-            <h1><a class="navbar-brand" href="#">Toolkit</a></h1>
-        
-            <!-- Navigation Links -->
-            <nav class="navbar navbar-expand-md">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">Model</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              People
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Administration</a></li>
-                              <li><a class="dropdown-item" href="#">Faculty</a></li>
-                              <li><a class="dropdown-item" href="#">Students</a></li>
-                            </ul>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">References</a>
-                        </li>
-                    </ul>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container padding-0">
+                <div class="top-header">
+                    <h1>Toolkit for Change</h1>
+                    <a href="#menu" class="hamburger">
+                        <svg viewBox="0 0 100 80" width="40" height="40">
+                            <rect width="100" height="10"></rect>
+                            <rect y="30" width="100" height="10"></rect>
+                            <rect y="60" width="100" height="10"></rect>
+                        </svg>
+                        <span class="visually-hidden">Menu</span>
+                    </a>
                 </div>
-            </nav>
-          </header>
-          <main class="container-sm">
-            <section class="introduction pt-3">
-                <div class="generic-section introduction">
-                    <div class="banner banner-home-page mb-3">
-                        <div class="banner-text">
-                            <h2 class="h1">Change is</h2>
-                            <h2 class="h1">Challenging...</h2>
-                        </div>
-                        <div class="featured-image">
-                            <img src="images/placeholder-wide-faded.png" alt="Placeholder">
-                        </div>
-                    </div>
-                    <div class="introduction-text">
-                       <p>Implementing technology changes in higher education institutions can be challenging, but in order to stay relevant and successful, post-secondary organizations should embrace change (Al-Haddad & Kotnour, 2015).</p>
-                       <p>This website is a toolkit for higher education institutions who want to implement digital change, particularly with digital communication tools. Included in this toolkit are resources for change, steps and procedures, as well as explanations centered around change management frameworks.</p>
-                       <p>A more detailed explanation and process is provided regarding steps for training administrators, staff, and students on digital communication tools.</p>
-                    </div>
-                  </div>  
+                <div class="bottom-header">
+                    <nav>
+                        <ul>
+                            <li><a href="#0">Home</a></li>
+                            <li><a href="#0">Challenge</a></li>
+                            <li><a href="#0">Manage</a></li>
+                            <li><a href="#0">I'm Ready</a></li>
+                            <li><a href="#0">Pre-Conditions</a></li>
+                            <li><a href="#0">Lewin's Model</a></li>
+                            <li><a href="#0">Unfreeze</a></li>
+                            <li><a href="#0">Change</a></li>
+                            <li><a href="#0">Training</a></li>
+                            <li><a href="#0">Stakeholders</a></li>
+                            <li><a href="#0">Framework</a></li>
+                            <li><a href="#0">Unfreeze</a></li>
+                            <li><a href="#0">Evaluation</a></li>
+                            <li><a href="#0">References</a></li>
+                            <li><a href="#0">Credits</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        </header>
+        <main>
+            <section class="intro">
+                <div class="container">
+                    <h2>Toolkit</h2>
+                    <h2>for Implementing Digital Communication Tool in Higher Education</h2>
+                </div>
             </section>
-            <section>
-                <h2>I'm interested, now what?</h2>
-                <p>Change is a multi-step process and there are several initial recommendations to address before the actual implementation occurs. 
-Check out our Pre-Conditions section for more detailed information about how to take the first step in your journey of change!</p>
-            </section>
-          </main>
+        </main>
     </div>
-    <script src="scripts/bootstrap.bundle.js"></script>
-  </body>
+</body>
 </html>
