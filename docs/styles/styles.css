@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Variables */
 :root {
     --blue-dark: #275c96;
+    --blue-medium: #3971cb;
     --blue-light: #e1efff;
     --orange: #f66b1d;
     --white: #ffffff;
@@ -251,6 +252,47 @@ header h1 {
     background-color: var(--blue-dark);
     padding: 0.7em 2em;
     border-radius: 0.5em;
+}
+
+.pre-conditions {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.pre-conditions .content-container {
+    display: flex;
+    gap: 1em;
+}
+
+.pre-conditions .content-container .col-02 {
+    flex: 0 0 4.6875em;
+}
+
+.pre-conditions .content-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0;
+}
+
+.pre-conditions .content-container h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-bottom: 1.35em;
+    color: var(--orange);
+}
+
+.pre-conditions .content-container .mega-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--blue-medium);
+    margin-bottom: 0.15em;
+}
+
+.pre-conditions .content-container .image-container {
+    margin-top: 7.8em;
 }
 
 /* Overlay */
