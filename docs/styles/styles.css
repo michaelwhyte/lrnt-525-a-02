@@ -295,6 +295,35 @@ header h1 {
     margin-top: 7.8em;
 }
 
+.change-model {
+    background-color: var(--blue-light);
+    text-align: center;
+    color: var(--blue-dark);
+}
+
+.change-model .content-container h2 {
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+}
+
+.change-model .content-container .image-container {
+    max-width: 162px;
+    margin: 0 auto 0.8em;
+} 
+
+.change-model .content-container h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.change-model .content-container .stage-number {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
 /* Overlay */
 .overlay {
     background-color: var(--black);
