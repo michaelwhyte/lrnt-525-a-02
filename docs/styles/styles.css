@@ -356,6 +356,38 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+/* Planning */
+.training {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.training .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.training .image-container {
+    padding: 2em 3em;
+}
+
+/* Stakeholders */
+.stakeholders {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.stakeholders .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.stakeholders .image-container {
+    padding: 2em 3em;
+}
+
 
 /* Overlay */
 .overlay {
