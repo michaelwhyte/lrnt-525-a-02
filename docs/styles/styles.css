@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: 100%;
 }
 
@@ -19,6 +19,10 @@ img {
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
+}
+
+p {
+    line-height: 1.4;
 }
 
 /* Fonts */
@@ -58,6 +62,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 header {
     height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--white);
 }
 
 header h1 {
@@ -87,7 +97,7 @@ header h1 {
     left: 0;
     width: 100%;
     transform: translateX(100%);
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     transition: transform 0.3s ease;
 }
@@ -100,8 +110,6 @@ header h1 {
 .bottom-header.no-transition {
     transition-duration: 0s;
 }
-
-
 
 .bottom-header nav ul {
     margin: 0;
@@ -119,10 +127,17 @@ header h1 {
     padding: 0 1.25em 0 1.25em;
 }
 
+.bottom-header nav a:focus,
+.bottom-header nav a:hover,
+.bottom-header nav a:active {
+    background-color: rgba(0, 0, 0, 0.035);
+}
+
 /* Intro section */
 .intro {
     background-color: var(--blue-light);
     color: var(--blue-dark);
+    margin-top: var(--header-height);
 }
 
 .intro .container {
@@ -146,7 +161,7 @@ header h1 {
     line-height: 1;
 }
 
-.image-container {
+.intro .image-container {
     padding: 0 6em;
 }
 
@@ -170,6 +185,42 @@ header h1 {
 .apa-title .box-highlight {
     background-color: var(--orange);
     padding: 1em 2em;
+}
+
+/* Change is Challenging */
+.change-is-challenging {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.change-is-challenging .image-container {
+    margin-bottom: 1.5em;
+    font-weight: 100;
+    font-size: 1.7em;
+    padding: 0 2.5em;
+}
+
+.change-is-challenging .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+/* Managing Change */
+.managing-change {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.managing-change .image-container {
+    padding: 0 4.2em;
+    margin-bottom: 1.5em;
+}
+
+.managing-change .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
 }
 
 /* Overlay */
