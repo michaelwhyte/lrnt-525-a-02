@@ -223,6 +223,36 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+/* Interested */
+.interested {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.interested .image-container {
+    padding: 0 8.75em;
+    margin-bottom: 1.25em;
+}
+
+.interested .text-container {
+    margin-bottom: 2em;
+}
+
+.interested .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.interested .call-to-action {
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    background-color: var(--blue-dark);
+    padding: 0.7em 2em;
+    border-radius: 0.5em;
+}
+
 /* Overlay */
 .overlay {
     background-color: var(--black);
