@@ -74,6 +74,7 @@ section {
 
 @media (min-width: 60em) {
     section:not(.intro) p,
+    .interested a,
     .references li,
     .credits li {
         font-size: 1.2em;
@@ -343,6 +344,10 @@ header h1 {
         gap: 3em;
     }
 
+    .change-is-challenging .text-container h2 {
+        font-size: 2.5em;
+    }
+
     .change-is-challenging .image-container {
         width: 15em;
     } 
@@ -400,6 +405,10 @@ header h1 {
     .managing-change .content-container {
         display: flex;
         gap: 3em;
+    }
+
+    .managing-change .text-container h2 {
+        font-size: 2.5em;
     }
 
     .managing-change .row-01 {
@@ -480,6 +489,10 @@ header h1 {
         display: flex;
         align-items: center;
         gap: 3em;
+    }
+
+    .interested .text-container h2 {
+        font-size: 2.5em;
     }
 
 }
@@ -568,6 +581,18 @@ header h1 {
         display: flex;
         align-items: center;
         gap: 5em;
+    }
+
+    .pre-conditions .content-container h2 {
+        font-size: 2.5em;
+    }
+
+    .pre-conditions .content-container h3 {
+        font-size: 1.2em;
+    }
+
+    .pre-conditions .content-container .mega-heading {
+        font-size: 2.1em;
     }
 
     .pre-conditions .content-container .image-container {
@@ -659,6 +684,18 @@ header h1 {
         padding-bottom: 5em;
     }
 
+    .change-model .content-container h2 {
+        font-size: 2.5em;
+    }
+
+    .change-model .content-container h3 {
+        font-size: 1.8em;
+    }
+
+    .change-model .content-container .stage-number {
+        font-size: 1.4em;
+    }
+
     .stages {
         display: flex;
         gap: 5em;
@@ -708,6 +745,10 @@ header h1 {
         display: flex;
         align-items: center;
         gap: 3em;
+    }
+
+    .unfreeze .text-container h2 {
+        font-size: 2.5em;
     }
 
     .unfreeze .image-container {
@@ -769,6 +810,10 @@ header h1 {
         display: flex;
         align-items: center;
         gap: 3em;
+    }
+
+    .change .text-container h2 {
+        font-size: 2.5em;
     }
 
     .change .content-container .row-01 {
@@ -841,6 +886,10 @@ header h1 {
         gap: 4em;
     }
 
+    .training .text-container h2 {
+        font-size: 2.5em;
+    }
+
     .training .content-container .row-01 {
         order: 1;
     }
@@ -909,6 +958,10 @@ header h1 {
         display: flex;
         align-items: center;
         gap: 4em;
+    }
+
+    .stakeholders .text-container h2 {
+        font-size: 2.5em;
     }
 
     .stakeholders .image-container {
@@ -1091,6 +1144,14 @@ header h1 {
 
 }
 
+@media (min-width: 60em) {
+
+    .freeze .text-container h2 {
+        font-size: 2.5em;
+    }
+
+}
+
 @media (min-width: 70em) {
 
     .freeze .content-container {
@@ -1159,6 +1220,10 @@ header h1 {
         gap: 4em;
     }
 
+    .evaluation .text-container h2 {
+        font-size: 2.5em;
+    }
+
     .evaluation .image-container {
         width: 20em;
     }
@@ -1198,6 +1263,10 @@ header h1 {
 
     .metrics .container {
         padding: 6.5em;
+    }
+
+    .metrics .text-container h2 {
+        font-size: 2.5em;
     }
 
 }
@@ -1266,7 +1335,17 @@ header h1 {
 @media (min-width: 60em) {
 
     .references .container {
-        padding: 4em;
+        max-width: 75em;
+        padding: 6em;
+    }
+
+    .references .text-container h2 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+
+    .references .reference-list-container {
+        padding: 2em 3em;
     }
 
 }
@@ -1274,7 +1353,7 @@ header h1 {
 @media (min-width: 64em) {
 
     .references .container {
-        padding: 4em 8em;
+        padding: 8em;
     }
 
 }
@@ -1282,7 +1361,7 @@ header h1 {
 @media (min-width: 70em) {
 
     .references .container {
-        padding: 4em 12em;
+        padding: 9.5em;
     }
 
 }
@@ -1309,6 +1388,10 @@ header h1 {
     line-height: 1.7;
 }
 
+.credits .image-container {
+    width: 15em;
+}
+
 .credits .content-container a {
     color: var(--blue-dark);
 }
@@ -1316,7 +1399,15 @@ header h1 {
 @media (min-width: 60em) {
 
     .credits .container {
-        padding: 4em;
+        padding: 6em;
+    }
+
+    .credits .text-container h2 {
+        font-size: 2.5em;
+    }
+
+    .credits .content-container h3 {
+        font-size: 1.6em;
     }
 
 }
@@ -1324,7 +1415,7 @@ header h1 {
 @media (min-width: 64em) {
 
     .credits .container {
-        padding: 6em 8em;
+        padding: 8em;
     }
 
 }
@@ -1332,7 +1423,7 @@ header h1 {
 @media (min-width: 70em) {
 
     .credits .container {
-        padding: 6em 12em;
+        padding: 9.5em;
     }
 
 }
@@ -1358,11 +1449,17 @@ footer .content-container {
     font-size: 0.9em;
 }
 
+@media (min-width: 60em) {
+    footer .content-container {
+        font-size: 1em;
+    }
+}
+
 /* Overlay */
 .overlay {
     background-color: var(--black);
     opacity: 0.7;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: var(--header-height);
