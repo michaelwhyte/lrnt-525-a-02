@@ -799,9 +799,14 @@ header h1 {
 @media (min-width: 37.5em){
 
     .training .image-container {
-        width: 14.125em;
+        width: auto;
         padding: 0;
-        margin: 1.5em auto;
+        margin: 3em auto;
+    }
+
+    .training .image-container img {
+        margin: 0 auto;
+        display: block;
     }
 
 }
@@ -823,7 +828,7 @@ header h1 {
     }
 
     .training .image-container {
-        width: 30em;
+        width: 25em;
     }
 
 }
@@ -864,9 +869,14 @@ header h1 {
 @media (min-width: 37.5em){
 
     .stakeholders .image-container {
-        width: 14.125em;
+        width: auto;
         padding: 0;
-        margin: 1.5em auto;
+        margin: 3em auto;
+    }
+
+    .stakeholders .image-container img {
+        display: block;
+        margin: 0 auto;
     }
 
 }
