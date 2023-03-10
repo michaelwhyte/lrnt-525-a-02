@@ -201,7 +201,7 @@ header h1 {
 }
 
 .intro .mega-heading {
-    font-size: 7em;
+    font-size: 6em;
     margin: 0;
     line-height: 1;
 }
@@ -215,6 +215,12 @@ header h1 {
 
 .intro .image-container {
     padding: 0 6em;
+}
+
+@media (min-width: 30em) {
+    .intro .mega-heading {
+        font-size: 7em;
+    }
 }
 
 @media (min-width: 37.5em){
@@ -284,13 +290,19 @@ header h1 {
 
 .apa-title p {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 400;
     line-height: 1.7;
 }
 
 .apa-title p:last-child {
     margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+    .apa-title p {
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: 60em) {
@@ -1374,8 +1386,10 @@ header h1 {
 
 .credits .content-container {
     display: flex;
+    flex-direction: column;
     gap: 1em;
     justify-content: center;
+    align-items: center;
 }
 
 .credits .text-container h2 {
@@ -1389,11 +1403,21 @@ header h1 {
 }
 
 .credits .image-container {
-    width: 15em;
+    width: 8em;
 }
 
 .credits .content-container a {
     color: var(--blue-dark);
+}
+
+@media (min-width: 30em) {
+    .credits .content-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (min-width: 60em) {
@@ -1408,6 +1432,10 @@ header h1 {
 
     .credits .content-container h3 {
         font-size: 1.6em;
+    }
+
+    .credits .image-container {
+        width: 15em;
     }
 
 }
