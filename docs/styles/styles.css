@@ -259,11 +259,7 @@ header h1 {
 }
 
 .change-is-challenging .image-container {
-    margin-bottom: 1.5em;
-    font-weight: 100;
-    font-size: 1.7em;
-    /* padding: 0 2.5em; */
-    max-width: 10.75em;
+    max-width: 18.75em;
     margin: 0.75em auto 1em;
 }
 
@@ -282,6 +278,8 @@ header h1 {
 
     .change-is-challenging .image-container {
         max-width: 22.4375em;
+        margin-top: 2em;
+        margin-bottom: 3em;
     }
 
 }
@@ -298,7 +296,7 @@ header h1 {
     }
 
     .change-is-challenging .image-container {
-        width: 11em;
+        width: 15em;
     } 
 
 }
@@ -315,7 +313,7 @@ header h1 {
     }
 
     .change-is-challenging .image-container {
-        width: 15em;
+        width: 18em;
     } 
 
 }
@@ -327,14 +325,60 @@ header h1 {
 }
 
 .managing-change .image-container {
-    padding: 0 4.2em;
-    margin-bottom: 1.5em;
+    max-width: 19.75em;
+    margin: 0.75em auto 1em;
 }
 
 .managing-change .text-container h2 {
     font-weight: 400;
     font-size: 2.1em;
     margin-bottom: 0.6em;
+}
+
+@media (min-width: 37.5em){
+
+    .managing-change .image-container {
+        max-width: 22.4375em;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .managing-change .content-container {
+        padding: 3em;
+    }
+    
+    .managing-change .content-container {
+        display: flex;
+        gap: 3em;
+    }
+
+    .managing-change .row-01 {
+        order: 1;
+    }
+
+    .managing-change .image-container {
+        width: 18em;
+    } 
+
+}
+
+@media (min-width: 64em) {
+
+    .managing-change .content-container {
+        padding: 4em;
+    }
+    
+    .managing-change .content-container {
+        display: flex;
+        gap: 4em;
+    }
+
+    .managing-change .image-container {
+        width: 25em;
+    } 
+
 }
 
 /* Interested */
