@@ -501,7 +501,6 @@ header h1 {
 }
 
 /* Metrics */
-/* Evaluation */
 .metrics {
     background-color: var(--blue-light);
     color: var(--blue-dark);
@@ -513,6 +512,74 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+/* References */
+.references {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.references .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.references .reference-list-container {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1.5em;
+    border-radius: 1em;
+    margin-bottom: 1.5em; 
+}
+
+.references .reference-list-container ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.references .reference-list-container li {
+    text-indent: -2.5em;
+    line-height: 1.4;
+    margin-bottom: 1.5em;
+}
+
+.references .reference-list-container li:last-child {
+    margin-bottom: 0;
+}
+
+.references .reference-list-container a {
+    color: var(--black);
+    overflow-wrap: break-word;
+}
+
+/* Credits */
+.credits {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.credits .content-container {
+    display: flex;
+    gap: 1em;
+}
+
+.credits .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+}
+
+/* .credits .content-container ul {
+    padding: 0;
+    list-style-position: inside;
+} */
+
+.credits .content-container li {
+    line-height: 1.7;
+}
+
+.credits .content-container a {
+    color: var(--blue-dark);
+}
 
 /* Overlay */
 .overlay {
