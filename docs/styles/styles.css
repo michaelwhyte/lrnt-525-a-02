@@ -581,6 +581,14 @@ header h1 {
     color: var(--blue-dark);
 }
 
+.good {
+    background-color: black;
+}
+
+.good .container {
+    padding: 0;
+}
+
 /* Overlay */
 .overlay {
     background-color: var(--black);
