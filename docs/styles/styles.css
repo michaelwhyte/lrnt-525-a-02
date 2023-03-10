@@ -415,6 +415,7 @@ header h1 {
 .interested {
     background-color: var(--orange);
     color: var(--white);
+    padding-bottom: 3em;
 }
 
 .interested .image-container {
@@ -656,6 +657,7 @@ header h1 {
 .unfreeze {
     background-color: var(--orange);
     color: var(--white);
+    padding: 3em 0;
 }
 
 .unfreeze .image-container {
@@ -666,6 +668,46 @@ header h1 {
     font-weight: 400;
     font-size: 2.1em;
     margin-bottom: 0.6em;
+}
+
+@media (min-width: 37.5em){
+
+    .unfreeze .image-container {
+        width: 14.125em;
+        padding: 0;
+        margin: 1.5em auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .unfreeze .content-container {
+        padding: 4em;
+    }
+    
+    .unfreeze .content-container {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .unfreeze .content-container {
+        padding: 6em 8em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .unfreeze .content-container {
+        padding: 6em 12em;
+    }
+
 }
 
 /* Change */
