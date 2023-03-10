@@ -55,13 +55,31 @@ h1, h2, h3, h4, h5, h6 {
     --header-height: 4.349375em;
 }
 
-/* Container Styles */
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+  
+/* Container */
 .container {
     max-width: 85.375em;
     margin: 0 auto;
     padding: 1.5em;
 }
 
+/* Section */
+section {
+    scroll-margin-top: calc(var(--header-height) - 0.0625em);
+}
+
+@media (min-width: 60em) {
+    section:not(.intro) p,
+    .references li,
+    .credits li {
+        font-size: 1.2em;
+    }
+}
+  
 /* Header */
 header {
     height: var(--header-height);

@@ -15,6 +15,11 @@ overlay.addEventListener('click', function(){
     body.classList.remove('show-menu');
 });
 
+nav.addEventListener('click', function(){
+    nav.classList.remove('no-transition');
+    body.classList.remove('show-menu');
+});
+
 nav.addEventListener('transitionend', function(){
     nav.classList.add('no-transition');
 });
