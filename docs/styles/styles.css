@@ -692,6 +692,10 @@ header h1 {
         gap: 3em;
     }
 
+    .unfreeze .image-container {
+        width: 20em;
+    }
+
 }
 
 @media (min-width: 64em) {
@@ -714,6 +718,7 @@ header h1 {
 .change {
     background-color: var(--blue-light);
     color: var(--blue-dark);
+    padding: 3em 0;
 }
 
 .change .image-container {
@@ -726,10 +731,59 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+@media (min-width: 37.5em){
+
+    .change .image-container {
+        width: 14.125em;
+        padding: 0;
+        margin: 1.5em auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .change .content-container {
+        padding: 4em;
+    }
+    
+    .change .content-container {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .change .content-container .row-01 {
+        order: 1;
+    }
+
+    .change .image-container {
+        width: 20em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .change .content-container {
+        padding: 6em 8em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .change .content-container {
+        padding: 6em 12em;
+    }
+
+}
+
 /* Planning */
 .training {
     background-color: var(--blue-light);
     color: var(--blue-dark);
+    padding-bottom: 3em;
 }
 
 .training .text-container h2 {
@@ -742,10 +796,59 @@ header h1 {
     padding: 2em 3em;
 }
 
+@media (min-width: 37.5em){
+
+    .training .image-container {
+        width: 14.125em;
+        padding: 0;
+        margin: 1.5em auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .training .content-container {
+        padding: 4em;
+    }
+    
+    .training .content-container {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+    }
+
+    .training .content-container .row-01 {
+        order: 1;
+    }
+
+    .training .image-container {
+        width: 30em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .training .content-container {
+        padding: 6em 8em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .training .content-container {
+        padding: 6em 12em;
+    }
+
+}
+
 /* Stakeholders */
 .stakeholders {
     background-color: var(--blue-light);
     color: var(--blue-dark);
+    padding-bottom: 3em;
 }
 
 .stakeholders .text-container h2 {
@@ -758,10 +861,55 @@ header h1 {
     padding: 2em 3em;
 }
 
+@media (min-width: 37.5em){
+
+    .stakeholders .image-container {
+        width: 14.125em;
+        padding: 0;
+        margin: 1.5em auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .stakeholders .content-container {
+        padding: 4em;
+    }
+    
+    .stakeholders .content-container {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+    }
+
+    .stakeholders .image-container {
+        width: 20em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .stakeholders .content-container {
+        padding: 6em 8em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .stakeholders .content-container {
+        padding: 6em 12em;
+    }
+
+}
+
 /* Adkar */
 .adkar {
     background-color: var(--blue-light);
     color: var(--black);
+    padding-bottom: 3em;
 }
 
 .adkar .text-container {
@@ -831,6 +979,30 @@ header h1 {
 
 .adkar .infographic-container .step-container ul {
     text-align: left;
+}
+
+@media (min-width: 60em) {
+    .adkar .infographic-container {
+        display: flex;
+        gap: 1em;
+    }
+
+    .adkar .infographic-container .step-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adkar .infographic-container .step-container ul {
+        flex: 1;
+    }
+}
+
+@media (min-width: 64em) {
+    .adkar .infographic-container {
+        display: flex;
+        gap: 2em;
+        padding: 0 2em;
+    }
 }
 
 /* Freeze */
