@@ -465,6 +465,25 @@ header h1 {
     text-align: left;
 }
 
+/* Freeze */
+.freeze {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.freeze .image-container {
+    margin: -1.5em -1.5em 0;
+    position: relative;
+    transform: scaleX(-1);
+    margin-bottom: 1.5em;
+}
+
+.freeze .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
 /* Evaluation */
 .evaluation {
     background-color: var(--blue-light);
