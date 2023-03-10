@@ -1011,7 +1011,7 @@ header h1 {
     .adkar .infographic-container {
         display: flex;
         gap: 2em;
-        padding: 0 2em;
+        padding: 0 2em 3em;
     }
 }
 
@@ -1034,6 +1034,70 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+@media (min-width: 37.5em) {
+
+    .freeze .image-container img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 45em) {
+
+    .freeze .container {
+        padding: 0 4em 4em 0;
+        overflow: hidden;
+    }
+    
+    .freeze .content-container {
+        display: flex;
+        gap: 2em;
+    }
+
+    .freeze .content-container .row-01 {
+        flex: 0 0 25em;
+    }
+
+    .freeze .image-container {
+        margin: 0;
+        transform: initial;
+    }
+
+    .freeze .image-container img {
+        transform: rotate(-20deg) scale(1.2) translateX(-2em);
+    }
+
+    .freeze .content-container .row-02 {
+        margin-top: 4em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .freeze .content-container {
+        padding: 0 2em 4em 0;
+    }
+
+    .freeze .content-container {
+        display: flex;
+        gap: 6em;
+    }
+
+    .freeze .image-container img {
+        transform: rotate(-10deg) translateY(-1.5em) scale(1.1);
+    }
+
+    .freeze .content-container .row-01 {
+        flex: 0 0 35em;
+    }
+
+    .freeze .content-container .row-02 {
+        margin-top: 10em;
+    }
+
+}
+
 /* Evaluation */
 .evaluation {
     background-color: var(--blue-light);
@@ -1050,10 +1114,60 @@ header h1 {
     padding: 2em 3em 0;
 }
 
+@media (min-width: 37.5em){
+
+    .evaluation .image-container {
+        width: auto;
+        padding: 0;
+        margin: 3em auto;
+    }
+
+    .evaluation .image-container img {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .evaluation .content-container {
+        padding: 4em 4em 0;
+    }
+    
+    .evaluation .content-container {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+    }
+
+    .evaluation .image-container {
+        width: 20em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .evaluation .content-container {
+        padding: 6em 8em 0;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .evaluation .content-container {
+        padding: 6em 12em 0;
+    }
+
+}
+
 /* Metrics */
 .metrics {
     background-color: var(--blue-light);
     color: var(--blue-dark);
+    padding-bottom: 4em;
 }
 
 .metrics .text-container h2 {
@@ -1062,10 +1176,38 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+@media (min-width: 60em) {
+
+    .metrics .container {
+        padding: 6.5em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .metrics .container {
+        padding: 6em 9.5em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .metrics .container {
+        padding: 6em 13.5em;
+    }
+
+}
+
 /* References */
 .references {
     background-color: var(--orange);
     color: var(--white);
+}
+
+.references .container {
+    max-width: 70em;
 }
 
 .references .text-container h2 {
@@ -1103,6 +1245,30 @@ header h1 {
     overflow-wrap: break-word;
 }
 
+@media (min-width: 60em) {
+
+    .references .container {
+        padding: 4em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .references .container {
+        padding: 4em 8em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .references .container {
+        padding: 4em 12em;
+    }
+
+}
+
 /* Credits */
 .credits {
     background-color: var(--blue-light);
@@ -1112,6 +1278,7 @@ header h1 {
 .credits .content-container {
     display: flex;
     gap: 1em;
+    justify-content: center;
 }
 
 .credits .text-container h2 {
@@ -1119,11 +1286,6 @@ header h1 {
     font-size: 2.1em;
     text-align: center;
 }
-
-/* .credits .content-container ul {
-    padding: 0;
-    list-style-position: inside;
-} */
 
 .credits .content-container li {
     line-height: 1.7;
@@ -1133,6 +1295,31 @@ header h1 {
     color: var(--blue-dark);
 }
 
+@media (min-width: 60em) {
+
+    .credits .container {
+        padding: 4em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .credits .container {
+        padding: 6em 8em;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .credits .container {
+        padding: 6em 12em;
+    }
+
+}
+
+/* Good */
 .good {
     background-color: black;
 }
