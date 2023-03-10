@@ -465,6 +465,35 @@ header h1 {
     text-align: left;
 }
 
+/* Evaluation */
+.evaluation {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.evaluation .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.evaluation .image-container {
+    padding: 2em 3em 0;
+}
+
+/* Metrics */
+/* Evaluation */
+.metrics {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.metrics .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
 
 /* Overlay */
 .overlay {
