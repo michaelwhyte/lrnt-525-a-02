@@ -494,7 +494,7 @@ header h1 {
 @media (min-width: 60em) {
 
     .interested .content-container {
-        padding: 4em;
+        padding: 2em 2em 0;
     }
     
     .interested .content-container {
@@ -512,7 +512,7 @@ header h1 {
 @media (min-width: 64em) {
 
     .interested .content-container {
-        padding: 4em 8em;
+        padding: 4em 8em 0;
     }
 
 }
@@ -520,7 +520,7 @@ header h1 {
 @media (min-width: 70em) {
 
     .interested .content-container {
-        padding: 4em 12em;
+        padding: 4em 12em 0;
     }
 
 }
@@ -533,11 +533,15 @@ header h1 {
 
 .pre-conditions .content-container {
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+}
+
+.pre-conditions .content-container .pre-conditions-header {
+    order: -2;
 }
 
 .pre-conditions .content-container .col-02 {
-    flex: 0 0 4.6875em;
+    order: -1;
 }
 
 .pre-conditions .content-container h2 {
@@ -546,10 +550,10 @@ header h1 {
     margin-bottom: 0;
 }
 
-.pre-conditions .content-container h3 {
+.pre-conditions .content-container .tiny-sub-heading {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin-bottom: 1.35em;
     color: var(--orange);
 }
@@ -563,8 +567,41 @@ header h1 {
     margin-bottom: 0.15em;
 }
 
+.pre-conditions .content-container h3 {
+    font-weight: 400;
+}
+
+.pre-conditions .content-container h3 span {
+    font-size: 1.2em;
+}
+
 .pre-conditions .content-container .image-container {
-    margin-top: 7.8em;
+    /* margin-top: 7.8em; */
+    max-width: 19em;
+    margin: 0 auto 2em;
+}
+
+.pre-conditions .content-container ol li {
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+.pre-conditions .stakeholder-table-container h3 {
+    margin-top: 1.3em;
+}
+
+.pre-conditions .stakeholder-table-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pre-conditions .stakeholder-table-container table td,
+.pre-conditions .stakeholder-table-container table th {
+    border: 1px solid var(--blue-dark);
+}
+
+.pre-conditions .stakeholder-table-container table td {
+    vertical-align: top;
 }
 
 @media (min-width: 37.5em){
@@ -574,25 +611,58 @@ header h1 {
         gap: 2em;
     }
 
-
+/* 
     .pre-conditions .content-container .image-container {
         margin-top: 2em;
         width: 10em;
         padding: 0;
-    }
+    } */
 
 }
 
 @media (min-width: 60em) {
-
-    .pre-conditions .content-container {
-        padding: 4em;
-    }
     
     .pre-conditions .content-container {
-        display: flex;
-        align-items: center;
-        gap: 5em;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas: 
+            "heading heading"
+            "txt man"
+            "tab man"
+        ;
+        gap: initial;
+        column-gap: 3em;
+        padding: 4em;
+    }
+
+    .pre-conditions .content-container .image-container {
+        /* margin-top: 7.8em; */
+        max-width: initial;
+        margin: initial;
+    }
+
+    .pre-conditions .content-container .pre-conditions-header {
+        order: initial;
+    }
+    
+    .pre-conditions .content-container .col-02 {
+        order: initial;
+    }
+
+    .pre-conditions .content-container .pre-conditions-header {
+        grid-area: heading;
+    }
+
+    .pre-conditions .content-container .col-01 {
+        grid-area: txt;
+    }
+
+    .pre-conditions .content-container .col-02 {
+        grid-area: man;
+    }
+
+    .pre-conditions .content-container .col-03 {
+        grid-area: tab;
     }
 
     .pre-conditions .content-container h2 {
@@ -607,9 +677,9 @@ header h1 {
         font-size: 2.1em;
     }
 
-    .pre-conditions .content-container .image-container {
+    /* .pre-conditions .content-container .image-container {
         margin-top: 7em;
-    }
+    } */
 
 }
 
@@ -632,18 +702,16 @@ header h1 {
 /* Change Model */
 .change-model {
     background-color: var(--blue-light);
-    text-align: center;
     color: var(--blue-dark);
 }
 
 .change-model .container {
-    padding-top: 0;
+    
 }
 
 .change-model .content-container h2 {
     font-weight: 400;
     font-size: 1.8em;
-    margin-bottom: 2em;
 }
 
 .change-model .content-container .image-container {
@@ -654,8 +722,17 @@ header h1 {
 .change-model .content-container h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    margin-bottom: 0.5em;
 }
+
+.change-model .content-container .change-model-sub-heading {
+    margin-top: 1.5em;
+}
+
+.change-model .content-container .stages {
+    margin-top: 3em;
+    text-align: center;
+}
+
 
 .change-model .content-container .stage-number {
     font-weight: 400;
@@ -787,8 +864,8 @@ header h1 {
 
 /* Change */
 .change {
-    background-color: var(--blue-light);
-    color: var(--blue-dark);
+    background-color: var(--orange);
+    color: var(--white);
     padding: 3em 0;
 }
 
