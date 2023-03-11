@@ -38,7 +38,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, summary {
     font-family: 'Playfair Display', serif;
 }
 
@@ -536,12 +536,51 @@ header h1 {
     flex-direction: column;
 }
 
-.pre-conditions .content-container .pre-conditions-header {
+.pre-conditions .pre-conditions-header {
+    margin-bottom: 2em;
+}
+
+.pre-conditions .introduction {
+    margin-bottom: 2em;
+}
+
+.pre-conditions .instructions {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1em 2em;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.pre-conditions .instructions p {
+    line-height: 1;
+    margin: 0;
+}
+
+.pre-conditions summary {
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.pre-conditions .dropdown-content {
+    margin-bottom: 2em;
+}
+
+/* .pre-conditions .content-container .pre-conditions-header {
     order: -2;
 }
 
 .pre-conditions .content-container .col-02 {
     order: -1;
+} */
+
+.pre-conditions .content-container .col-01 .image-container {
+    margin-bottom: 0;
+}
+
+.pre-conditions .content-container .col-02 {
+    margin-top: 1em;
 }
 
 .pre-conditions .content-container .col-03 {
@@ -552,11 +591,15 @@ header h1 {
     margin-top: 2em;
 } */
 
-.pre-conditions .content-container .col-05 {
+.pre-conditions .content-container .col-06 {
     margin-top: 2em;
 }
 
-.pre-conditions .content-container .col-06 {
+.pre-conditions .content-container .col-07 {
+    margin-top: 2em;
+}
+
+.pre-conditions .content-container .col-09 {
     margin-top: 2em;
 }
 
@@ -564,12 +607,17 @@ header h1 {
     margin-top: 2em;
 } */
 
-.pre-conditions .content-container .col-04 li {
+.pre-conditions .content-container .col-05 li {
     margin-bottom: 0.5em;
     line-height: 1.4;
 }
 
 .pre-conditions .content-container .col-06 li {
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+.pre-conditions .content-container .col-08 li {
     margin-bottom: 0.5em;
     line-height: 1.4;
 }
@@ -653,16 +701,17 @@ header h1 {
 @media (min-width: 60em) {
     
     .pre-conditions .content-container {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        display: block;
+        /* grid-template-columns: 1.5fr 1fr;
         grid-template-areas: 
             "heading heading"
-            "txt man"
-            "tab man"
+            "ready  man-with-checklist"
+            "ready  man-with-checklist"
+            "buy-in people-in-agreement"
         ;
         gap: initial;
         column-gap: 3em;
-        padding: 4em;
+        padding: 4em; */
     }
 
     .pre-conditions .content-container .image-container {
@@ -671,27 +720,27 @@ header h1 {
         margin: initial;
     }
 
-    .pre-conditions .content-container .pre-conditions-header {
+    /* .pre-conditions .content-container .pre-conditions-header {
         order: initial;
     }
     
     .pre-conditions .content-container .col-02 {
         order: initial;
-    }
+    } */
 
     .pre-conditions .content-container .pre-conditions-header {
         grid-area: heading;
     }
 
-    .pre-conditions .content-container .col-01 {
+    .pre-conditions .content-container .col-02 {
         grid-area: txt;
     }
 
-    .pre-conditions .content-container .col-02 {
+    .pre-conditions .content-container .col-01 {
         grid-area: man;
     }
 
-    .pre-conditions .content-container .col-04 {
+    .pre-conditions .content-container .col-05 {
         grid-area: tab;
     }
 
