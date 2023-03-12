@@ -29,6 +29,10 @@ li {
     font-size: 1.2em;
 }
 
+nav li {
+    font-size: 1em;
+}
+
 /* Fonts */
 
 /*  
@@ -722,8 +726,56 @@ header h1 {
     margin-bottom: 2em;
 }
 
-.pre-conditions .buy-in .image-container {
-    max-width: initial;
+.pre-conditions .buy-in table {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    color: var(--black);
+    overflow: hidden;
+}
+
+.pre-conditions .buy-in ul {
+    padding: 0;
+    margin-left: 1em;
+}
+
+.pre-conditions .buy-in li {
+    margin-bottom: 0.75em;
+    line-height: 1.4;
+}
+
+.pre-conditions .buy-in li li {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.pre-conditions .buy-in th
+.pre-conditions .buy-in td {
+    max-width: 50%;
+}
+
+.pre-conditions .buy-in th {
+    padding: 1em;
+}
+
+.pre-conditions .buy-in td {
+    border: 1px solid #ccc;
+    padding: 1.25em;
+    vertical-align: text-top;
+}
+
+
+.pre-conditions .buy-in th:first-child {
+    background-color: var(--orange);
+    color: white;
+}
+
+.pre-conditions .buy-in th:last-child {
+    background-color: var(--blue-dark);
+    color: white;
 }
 
 .pre-conditions .evaluation li {
