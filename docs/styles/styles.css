@@ -25,6 +25,10 @@ p {
     line-height: 1.4;
 }
 
+li {
+    font-size: 1.2em;
+}
+
 /* Fonts */
 
 /*  
@@ -568,11 +572,6 @@ header h1 {
     color: var(--blue-dark);
 }
 
-/* .pre-conditions .content-container {
-    display: flex;
-    flex-direction: column;
-} */
-
 .pre-conditions .pre-conditions-header {
     margin-bottom: 2em;
 }
@@ -855,6 +854,8 @@ header h1 {
     .change-model .content-container {
         padding-top: 2em;
         padding-bottom: 5em;
+        padding-left: 8em;
+        padding-right: 8em;
     }
 
     .change-model .content-container h2 {
@@ -1091,7 +1092,7 @@ header h1 {
 
 }
 
-/* Planning */
+/* Training */
 .training {
     background-color: var(--blue-light);
     color: var(--blue-dark);
@@ -1112,10 +1113,6 @@ header h1 {
     font-size: 2.5em;
     text-align: center;
     font-family: 'Playfair Display', serif;
-}
-
-.training .row-01 {
-    /* margin-bottom: 2em; */
 }
 
 .training .row-02 .image-container {
@@ -1546,7 +1543,7 @@ header h1 {
 @media (min-width: 76em) {
 
     .udl {
-        padding-bottom: 8em;
+        padding-bottom: 4em;
     }
 
 
@@ -1583,6 +1580,43 @@ header h1 {
         flex: 0 0 23.75em;  
     }
 
+}
+
+/* Why ADKAR and UDL */
+.why-adkar-udl {
+    background-color: var(--blue-light);
+}
+
+.why-adkar-udl {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.why-adkar-udl .container {
+    padding-bottom: 0;
+}
+
+.why-adkar-udl .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.why-adkar-udl .text-container li {
+    line-height: 1.4;
+    margin-bottom: 0.8em;
+}
+
+@media (min-width: 60em) {
+    .why-adkar-udl .content-container {
+        padding: 0 4em 8em;
+    }
+}
+
+@media (min-width: 70em) {
+    .why-adkar-udl .content-container {
+        padding: 6em 12em 8em;
+    }
 }
 
 /* Freeze */
