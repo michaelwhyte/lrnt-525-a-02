@@ -276,7 +276,7 @@ body.show-menu {
 }
 
 .intro .image-container {
-    padding: 0 6em;
+    padding: 0 6em 0.5em;
 }
 
 @media (min-width: 30em) {
@@ -520,8 +520,13 @@ body.show-menu {
 }
 
 .interested .image-container {
-    padding: 1em 8.75em 0;
+    padding: 1em 5em 0;
     margin-bottom: 1.25em;
+}
+
+.interested .image-container img {
+    display: block;
+    margin: 0 auto 1.25em;
 }
 
 .interested .text-container {
@@ -553,7 +558,7 @@ body.show-menu {
 
 }
 
-@media (min-width: 60em) {
+@media (min-width: 45em) {
 
     .interested .content-container {
         padding: 2em 2em 0;
@@ -725,33 +730,45 @@ body.show-menu {
     margin-top: 1.3em;
 }
 
-.pre-conditions .stakeholder-table-container table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.pre-conditions .stakeholder-table-container table td,
-.pre-conditions .stakeholder-table-container table th {
-    border: 1px solid var(--blue-dark);
-}
-
-.pre-conditions .stakeholder-table-container table td {
-    vertical-align: top;
-}
-
 .pre-conditions .organizational-readiness .col-01 {
     margin-bottom: 2em;
 }
 
 .pre-conditions .buy-in table {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 0.4em;
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
     color: var(--black);
-    overflow: hidden;
+    display: block;
+}
+
+.pre-conditions .buy-in thead {
+    display: none;
+}
+
+.pre-conditions .buy-in table th,
+.pre-conditions .buy-in table td {
+    display: block;
+}
+
+.pre-conditions .buy-in table td {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.pre-conditions .buy-in table .table-mobile-heading.table-heading-leadership {
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.pre-conditions .buy-in table .table-mobile-heading.table-heading-tools {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.pre-conditions .buy-in table .table-data-tools {
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
 }
 
 .pre-conditions .buy-in ul {
@@ -772,6 +789,7 @@ body.show-menu {
 .pre-conditions .buy-in th
 .pre-conditions .buy-in td {
     max-width: 50%;
+    display: block;
 }
 
 .pre-conditions .buy-in th {
@@ -779,18 +797,18 @@ body.show-menu {
 }
 
 .pre-conditions .buy-in td {
-    border: 1px solid #ccc;
     padding: 1.25em;
-    vertical-align: text-top;
 }
 
-
-.pre-conditions .buy-in th:first-child {
+.table-heading-leadership {
+    background-color: pink;
+}
+.pre-conditions .buy-in .table-heading-leadership {
     background-color: var(--orange);
     color: white;
 }
 
-.pre-conditions .buy-in th:last-child {
+.pre-conditions .buy-in .table-heading-tools {
     background-color: var(--blue-dark);
     color: white;
 }
@@ -824,6 +842,62 @@ body.show-menu {
         gap: 2em;
     }
 
+
+
+}
+
+@media (min-width: 45em) {
+
+    .pre-conditions .buy-in table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+        color: var(--black);
+        overflow: hidden;
+        display: table;
+    }
+
+    .pre-conditions .buy-in thead {
+        display: table-header-group;
+    }
+    
+    .pre-conditions .buy-in table th,
+    .pre-conditions .buy-in table td {
+        display: table-cell;
+    }
+
+    .pre-conditions .buy-in td {
+        border: 1px solid #ccc;
+        padding: 1.25em;
+        vertical-align: text-top;
+    }
+
+    .pre-conditions .buy-in .table-mobile-heading {
+        display: none;
+    }
+    
+    .table-desktop-heading.table-heading-leadership {
+        border-top-left-radius: 0.4em;
+    }
+
+    .table-desktop-heading.table-heading-tools {
+        border-top-right-radius: 0.4em;
+    }
+
+    .pre-conditions .buy-in table td {
+        border: 1px solid #ccc;
+        background-color: white;
+        border-radius: 1em;
+    }
+
+    .pre-conditions .buy-in table .table-data-tools {
+        border-bottom-left-radius: initial;
+        border-bottom-right-radius: initial;
+    }
+    
+    .pre-conditions .buy-in table .table-data-tools {
+        border-bottom-right-radius: 0.4em;
+    }
 
 
 }
