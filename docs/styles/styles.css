@@ -519,6 +519,10 @@ body.show-menu {
     padding-bottom: 3em;
 }
 
+.interested a {
+    color: var(--white);
+}
+
 .interested .image-container {
     padding: 1em 5em 0;
     margin-bottom: 1.25em;
