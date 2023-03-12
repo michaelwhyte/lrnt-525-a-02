@@ -758,12 +758,14 @@ header h1 {
 @media (min-width: 60em) {
     
     .pre-conditions .organizational-readiness .dropdown-content,
+    .pre-conditions .define-success .dropdown-content,
     .pre-conditions .privacy .dropdown-content {
         display: flex;
         gap: 2em;
     }
 
     .pre-conditions .organizational-readiness .col-02,
+    .pre-conditions .define-success .dropdown-content .col-02,
     .pre-conditions .privacy .dropdown-content .col-02 {
         flex: 0 0 17em;
     }
@@ -1799,6 +1801,11 @@ header h1 {
     font-weight: 400;
     font-size: 2.1em;
     margin-bottom: 0.6em;
+}
+
+.evaluation .text-container li {
+    margin-bottom: 1em;
+    line-height: 1.4;
 }
 
 .evaluation .image-container {
