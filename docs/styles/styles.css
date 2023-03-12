@@ -882,18 +882,7 @@ body.show-menu {
     .pre-conditions .buy-in table td {
         border: 1px solid #ccc;
         background-color: white;
-        border-radius: 1em;
     }
-
-    .pre-conditions .buy-in table .table-data-tools {
-        border-bottom-left-radius: initial;
-        border-bottom-right-radius: initial;
-    }
-    
-    .pre-conditions .buy-in table .table-data-tools {
-        border-bottom-right-radius: 0.4em;
-    }
-
 
 }
 
