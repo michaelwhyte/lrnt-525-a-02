@@ -122,7 +122,6 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     padding: 0.8em;
-    /* border: 3px solid red; */
 }
 
 /* Hamburger */
@@ -168,14 +167,6 @@ body.show-menu {
     padding: 0;
     list-style: none;
 }
-
-/* .bottom-header nav li {
-    grid-column: span 2;
-}
-
-.bottom-header nav .nav-link-sub-sub-level {
-    grid-column: span 1;
-} */
 
 .bottom-header nav a {
     color: var(--black);
@@ -2047,8 +2038,6 @@ body.show-menu {
     max-width: 28.25em;
 }
 
-
-
 @media (min-width: 37.5em){
 
     .sustainment .image-container {
@@ -2098,8 +2087,6 @@ body.show-menu {
     }
 
 }
-
-
 
 /* References */
 .references {
