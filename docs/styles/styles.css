@@ -792,6 +792,8 @@ header h1 {
     color: var(--blue-dark);
 }
 
+
+
 .change-model .content-container h2 {
     font-weight: 400;
     font-size: 1.8em;
@@ -814,6 +816,12 @@ header h1 {
 .change-model .content-container .stages {
     margin-top: 3em;
     text-align: center;
+}
+
+.change-model .content-container .stages a {
+    display: block;
+    color: var(--blue-dark);
+    text-decoration: none;
 }
 
 
@@ -1750,12 +1758,9 @@ header h1 {
 
     .celebrate .content-container {
         padding: 4em 4em 0;
-    }
-    
-    .evaluation .content-container {
         display: flex;
+        gap: 3em;
         align-items: center;
-        gap: 4em;
     }
 
     .celebrate .text-container h2 {
@@ -1786,6 +1791,88 @@ header h1 {
 
 /* Evaluation */
 .evaluation {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.evaluation .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.evaluation .image-container {
+    padding: 2em 3em 0;
+}
+
+@media (min-width: 37.5em){
+
+    .evaluation .image-container {
+        width: auto;
+        padding: 0;
+        margin: 3em auto;
+    }
+
+    .evaluation .image-container img {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .evaluation .content-container {
+        padding: 4em 4em 0;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .evaluation .content-container .row-01 {
+        flex-grow: 3
+    }
+
+    .evaluation .content-container .row-02 {
+        flex-grow: 1
+    }
+
+
+    
+    /* .evaluation .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 4em;
+    } */
+
+    .evaluation .text-container h2 {
+        font-size: 2.5em;
+    }
+
+    .evaluation .image-container {
+        width: 20em;
+    }
+
+}
+
+/* @media (min-width: 64em) {
+
+    .evaluation .content-container {
+        padding: 6em 8em 0;
+    }
+
+} */
+
+@media (min-width: 70em) {
+
+    .evaluation .content-container {
+        padding: 6em 12em 0;
+    }
+
+}
+/* .evaluation {
     background-color: var(--blue-light);
     color: var(--blue-dark);
 }
@@ -1851,7 +1938,7 @@ header h1 {
         padding: 6em 12em 0;
     }
 
-}
+} */
 
 /* Sustainment */
 .sustainment {
