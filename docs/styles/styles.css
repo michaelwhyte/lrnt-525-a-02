@@ -1615,7 +1615,7 @@ header h1 {
 
 @media (min-width: 70em) {
     .why-adkar-udl .content-container {
-        padding: 6em 12em 8em;
+        padding: 0 12em 8em;
     }
 }
 
@@ -1716,7 +1716,6 @@ header h1 {
 }
 
 /* Celebrate */
-/* Evaluation */
 .celebrate {
     background-color: var(--blue-light);
     color: var(--blue-dark);
