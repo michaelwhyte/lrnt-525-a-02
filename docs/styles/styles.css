@@ -136,7 +136,7 @@ header h1 {
 .bottom-header {
     background-color: var(--white);
     top: var(--header-height);
-    height: 100%;
+    height: calc(100% - var(--header-height));
     left: 0;
     width: 100%;
     transform: translateX(100%);
@@ -150,8 +150,17 @@ header h1 {
     transition-duration: 0.3s;
 }
 
+body.show-menu {
+    overflow: hidden;
+}
+
 .bottom-header.no-transition {
     transition-duration: 0s;
+}
+
+.bottom-header nav {
+    height: 100%;
+    overflow: scroll;
 }
 
 .bottom-header nav ul {
@@ -159,6 +168,14 @@ header h1 {
     padding: 0;
     list-style: none;
 }
+
+/* .bottom-header nav li {
+    grid-column: span 2;
+}
+
+.bottom-header nav .nav-link-sub-sub-level {
+    grid-column: span 1;
+} */
 
 .bottom-header nav a {
     color: var(--black);
@@ -212,7 +229,7 @@ header h1 {
 
     .show-menu .bottom-header {
         transform: initial;
-        height: 38em;
+        height: 50em;
     }
 
     .bottom-header nav a {
@@ -2020,7 +2037,7 @@ header h1 {
 .references .reference-list-container {
     background-color: var(--white);
     color: var(--black);
-    padding: 1.5em;
+    padding: 2em;
     border-radius: 1em;
     margin-bottom: 1.5em; 
 }
