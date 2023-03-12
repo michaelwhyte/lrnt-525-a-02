@@ -795,6 +795,10 @@ body.show-menu {
     color: white;
 }
 
+.pre-conditions .evaluation ol {
+    margin-bottom: 2em;
+}
+
 .pre-conditions .evaluation li {
     margin-bottom: 1em;
     line-height: 1.4;
@@ -829,6 +833,7 @@ body.show-menu {
     .pre-conditions .organizational-readiness .dropdown-content,
     .pre-conditions .ethical-considerations .dropdown-content,
     .pre-conditions .define-success .dropdown-content,
+    .pre-conditions .evaluation .dropdown-content,
     .pre-conditions .privacy .dropdown-content {
         display: flex;
         gap: 2em;
@@ -837,6 +842,7 @@ body.show-menu {
     .pre-conditions .organizational-readiness .col-02,
     .pre-conditions .ethical-considerations .dropdown-content .col-02,
     .pre-conditions .define-success .dropdown-content .col-02,
+    .pre-conditions .evaluation .dropdown-content .col-02,
     .pre-conditions .privacy .dropdown-content .col-02 {
         flex: 0 0 17em;
     }
@@ -887,7 +893,7 @@ body.show-menu {
 }
 
 .change-model .content-container .stages {
-    margin-top: 3em;
+    margin-top: 5em;
     text-align: center;
 }
 
