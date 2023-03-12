@@ -1715,6 +1715,76 @@ header h1 {
 
 }
 
+/* Celebrate */
+/* Evaluation */
+.celebrate {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.celebrate .text-container h2 {
+    font-weight: 400;
+    font-size: 2.1em;
+    margin-bottom: 0.6em;
+}
+
+.celebrate .image-container {
+    padding: 2em 3em 0;
+}
+
+@media (min-width: 37.5em){
+
+    .celebrate .image-container {
+        width: auto;
+        padding: 0;
+        margin: 3em auto;
+    }
+
+    .celebrate .image-container img {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 60em) {
+
+    .celebrate .content-container {
+        padding: 4em 4em 0;
+    }
+    
+    .evaluation .content-container {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+    }
+
+    .celebrate .text-container h2 {
+        font-size: 2.5em;
+    }
+
+    .celebrate .image-container {
+        width: 20em;
+    }
+
+}
+
+@media (min-width: 64em) {
+
+    .evaluation .content-container {
+        padding: 6em 8em 0;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .evaluation .content-container {
+        padding: 6em 12em 0;
+    }
+
+}
+
 /* Evaluation */
 .evaluation {
     background-color: var(--blue-light);
@@ -1784,14 +1854,14 @@ header h1 {
 
 }
 
-/* Metrics */
-.metrics {
+/* Sustainment */
+.sustainment {
     background-color: var(--blue-light);
     color: var(--blue-dark);
     padding-bottom: 4em;
 }
 
-.metrics .text-container h2 {
+.sustainment .text-container h2 {
     font-weight: 400;
     font-size: 2.1em;
     margin-bottom: 0.6em;
@@ -1799,11 +1869,11 @@ header h1 {
 
 @media (min-width: 60em) {
 
-    .metrics .container {
+    .sustainment .container {
         padding: 6.5em;
     }
 
-    .metrics .text-container h2 {
+    .sustainment .text-container h2 {
         font-size: 2.5em;
     }
 
@@ -1811,7 +1881,7 @@ header h1 {
 
 @media (min-width: 64em) {
 
-    .metrics .container {
+    .sustainment .container {
         padding: 6em 9.5em;
     }
 
@@ -1819,7 +1889,7 @@ header h1 {
 
 @media (min-width: 70em) {
 
-    .metrics .container {
+    .sustainment .container {
         padding: 6em 13.5em;
     }
 
