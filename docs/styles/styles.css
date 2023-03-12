@@ -1638,6 +1638,11 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+.freeze .text-container li {
+    margin-bottom: 0.8em;
+    line-height: 1.4;
+}
+
 @media (min-width: 37.5em) {
 
     .freeze .image-container img {
