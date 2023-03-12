@@ -758,6 +758,7 @@ header h1 {
 @media (min-width: 60em) {
     
     .pre-conditions .organizational-readiness .dropdown-content,
+    .pre-conditions .ethical-considerations .dropdown-content,
     .pre-conditions .define-success .dropdown-content,
     .pre-conditions .privacy .dropdown-content {
         display: flex;
@@ -765,6 +766,7 @@ header h1 {
     }
 
     .pre-conditions .organizational-readiness .col-02,
+    .pre-conditions .ethical-considerations .dropdown-content .col-02,
     .pre-conditions .define-success .dropdown-content .col-02,
     .pre-conditions .privacy .dropdown-content .col-02 {
         flex: 0 0 17em;
@@ -1595,6 +1597,7 @@ header h1 {
 /* Why ADKAR and UDL */
 .why-adkar-udl {
     background-color: var(--blue-light);
+    padding-bottom: 3em;
 }
 
 .why-adkar-udl {
@@ -1739,6 +1742,7 @@ header h1 {
 
 .celebrate .image-container {
     padding: 2em 3em 0;
+    max-width: 28.25em;
 }
 
 @media (min-width: 37.5em){
@@ -1777,7 +1781,7 @@ header h1 {
 
 @media (min-width: 64em) {
 
-    .evaluation .content-container {
+    .celebrate .content-container {
         padding: 6em 8em 0;
     }
 
@@ -1785,7 +1789,7 @@ header h1 {
 
 @media (min-width: 70em) {
 
-    .evaluation .content-container {
+    .celebrate .content-container {
         padding: 6em 12em 0;
     }
 
@@ -1810,6 +1814,7 @@ header h1 {
 
 .evaluation .image-container {
     padding: 2em 3em 0;
+    max-width: 28.25em;
 }
 
 @media (min-width: 37.5em){
@@ -1845,15 +1850,6 @@ header h1 {
         flex-grow: 1
     }
 
-
-    
-    /* .evaluation .content-container {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: 4em;
-    } */
-
     .evaluation .text-container h2 {
         font-size: 2.5em;
     }
@@ -1864,14 +1860,6 @@ header h1 {
 
 }
 
-/* @media (min-width: 64em) {
-
-    .evaluation .content-container {
-        padding: 6em 8em 0;
-    }
-
-} */
-
 @media (min-width: 70em) {
 
     .evaluation .content-container {
@@ -1879,78 +1867,14 @@ header h1 {
     }
 
 }
-/* .evaluation {
-    background-color: var(--blue-light);
-    color: var(--blue-dark);
-}
-
-.evaluation .text-container h2 {
-    font-weight: 400;
-    font-size: 2.1em;
-    margin-bottom: 0.6em;
-}
-
-.evaluation .image-container {
-    padding: 2em 3em 0;
-}
-
-@media (min-width: 37.5em){
-
-    .evaluation .image-container {
-        width: auto;
-        padding: 0;
-        margin: 3em auto;
-    }
-
-    .evaluation .image-container img {
-        display: block;
-        margin: 0 auto;
-    }
-
-}
-
-@media (min-width: 60em) {
-
-    .evaluation .content-container {
-        padding: 4em 4em 0;
-    }
-    
-    .evaluation .content-container {
-        display: flex;
-        align-items: center;
-        gap: 4em;
-    }
-
-    .evaluation .text-container h2 {
-        font-size: 2.5em;
-    }
-
-    .evaluation .image-container {
-        width: 20em;
-    }
-
-}
-
-@media (min-width: 64em) {
-
-    .evaluation .content-container {
-        padding: 6em 8em 0;
-    }
-
-}
-
-@media (min-width: 70em) {
-
-    .evaluation .content-container {
-        padding: 6em 12em 0;
-    }
-
-} */
 
 /* Sustainment */
 .sustainment {
     background-color: var(--blue-light);
     color: var(--blue-dark);
+}
+
+.sustainment .content-container {
     padding-bottom: 4em;
 }
 
@@ -1960,33 +1884,69 @@ header h1 {
     margin-bottom: 0.6em;
 }
 
+.sustainment .text-container li {
+    margin-bottom: 1em;
+    line-height: 1.4;
+}
+
+.sustainment .image-container {
+    padding: 2em 3em 0;
+    max-width: 28.25em;
+}
+
+
+
+@media (min-width: 37.5em){
+
+    .sustainment .image-container {
+        width: auto;
+        padding: 0;
+        margin: 3em auto;
+    }
+
+    .sustainment .image-container img {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
 @media (min-width: 60em) {
 
-    .sustainment .container {
-        padding: 6.5em;
+    .sustainment .content-container {
+        padding: 4em 4em 0;
+        display: flex;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .sustainment .content-container .row-01 {
+        flex-grow: 3
+    }
+
+    .sustainment .content-container .row-02 {
+        flex-grow: 1
     }
 
     .sustainment .text-container h2 {
         font-size: 2.5em;
     }
 
-}
-
-@media (min-width: 64em) {
-
-    .sustainment .container {
-        padding: 6em 9.5em;
+    .sustainment .image-container {
+        width: 20em;
     }
 
 }
 
 @media (min-width: 70em) {
 
-    .sustainment .container {
-        padding: 6em 13.5em;
+    .sustainment .content-container {
+        padding: 6em 12em;
     }
 
 }
+
+
 
 /* References */
 .references {
